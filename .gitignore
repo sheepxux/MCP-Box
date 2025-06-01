@@ -1,33 +1,84 @@
-# 依赖
+# 依赖相关
 node_modules
+node_modules/
+jspm_packages/
 .pnp
 .pnp.js
+.pnp.*
+bower_components
+web_modules/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.npm
 
-# 测试
-coverage
-.nyc_output
-
-# Next.js
+# 编译和构建输出
 .next/
+.next
 out/
+out
 build
 dist
+.nuxt
+build/Release
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.cache
+.parcel-cache
+.vuepress/dist
+**/.vitepress/dist
+**/.vitepress/cache
+.temp
 
-# 环境变量
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# 测试和覆盖率
+coverage
+.nyc_output
+*.lcov
+lib-cov
+.vscode-test
 
-# 日志
+# 日志和调试
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# 编辑器
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+.lock-wscript
+.node_repl_history
+.tern-port
+.grunt
+
+# 环境变量和配置
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.yarn-integrity
+
+# 缓存
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.cache/
+
+# 编辑器配置
 .idea
 .vscode
 *.suo
@@ -35,6 +86,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# 打包文件
+*.tgz
 
 # 系统文件
 .DS_Store
